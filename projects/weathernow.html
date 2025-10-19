@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeatherNow — Jerry (iam-jerry)</title>
+  <meta name="description" content="Project details: WeatherNow by Jerry (iam-jerry)" />
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <a class="back-link" href="../index.html">← Back to portfolio</a>
+
+    <section class="project-hero" aria-labelledby="weathernow-title">
+      <div class="thumb" aria-hidden="true">
+        <!-- Add a real screenshot at assets/weathernow-screenshot.png -->
+        <img src="../assets/weathernow-screenshot.png" alt="WeatherNow screenshot (placeholder)">
+      </div>
+      <div class="project-content">
+        <h2 id="weathernow-title">WeatherNow — Weather Dashboard</h2>
+        <div class="project-meta">
+          <div>Role: Developer</div>
+          <div> · </div>
+          <div>Tech: Fetch API, OpenWeatherMap</div>
+        </div>
+        <p class="muted">WeatherNow fetches weather data from the OpenWeatherMap API, gracefully handles network errors, and progressively enhances the UI so it still displays basic info if JavaScript is disabled.</p>
+        <p>
+          <a class="cta" href="https://iam-jerry.github.io/weathernow" target="_blank" rel="noopener">View live</a>
+          <a style="margin-left:12px;color:var(--muted);text-decoration:none" href="https://github.com/iam-jerry/weathernow" target="_blank" rel="noopener">View source</a>
+        </p>
+      </div>
+    </section>
+
+    <article class="card">
+      <h3>Technical details</h3>
+      <p class="muted">Uses the Fetch API and simple caching strategy. UI is responsive and shows detailed forecasts for multiple locations. Error states and rate-limit handling are surfaced to the user in plain language.</p>
+    </article>
+
+    <article class="card" style="margin-top:12px;">
+      <h3>Next steps</h3>
+      <p class="muted">Add unit tests for fetch logic, optionally move to a serverless function to protect API keys, and add localization support for non-English units.</p>
+    </article>
+
+    <footer>
+      <div style="margin-top:18px">© <span id="year"></span> Jerry (iam-jerry). Built with HTML & CSS.</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

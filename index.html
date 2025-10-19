@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jerry Bature</title>
+  <meta name="description" content="Portfolio website for Jerry (iam-jerry) — developer, designer, creator." />
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="avatar" aria-hidden="true">IJ</div>
+        <div>
+          <div style="font-weight:700">Jerry Bature</div>
+          <div class="muted" style="font-size:13px">Frontend Developer • Accessibility Enthusiast</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="intro-heading">
+        <div class="hero-left">
+          <h1 id="intro-heading">Hi — I'm Jerry.</h1>
+          <p class="tagline">I build accessible, high-performance web interfaces and small JS tools. I focus on clarity, maintainability, and fast load times.</p>
+          <p>
+            <a class="cta" href="#projects">See my work</a>
+            <a style="margin-left:10px;color:var(--muted);text-decoration:none" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-photo" title="Jerry's portrait">
+            <!-- Using your GitHub avatar as the photo; replace src with your own hosted image if you prefer -->
+            <img src="images/bitcoinBadge.jpg" alt="Jerry photo">
+          </div>
+          <div class="muted" style="margin-top:8px;font-size:13px"> Based in Kaduna, Nigeria</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card" id="about" aria-labelledby="about-heading">
+          <h3 id="about-heading">About me</h3>
+          <p class="muted">I'm a frontend developer who builds responsive, accessible interfaces. I enjoy turning UI ideas into fast, maintainable code and shipping projects that people actually use.</p>
+          <p style="margin-top:10px">
+            <strong>Availability:</strong> Open to work · <strong>Experience:</strong> 3+ years
+          </p>
+        </article>
+
+        <article class="card" id="contact" aria-labelledby="contact-heading">
+          <h3 id="contact-heading">Contact</h3>
+          <p class="muted">Want to collaborate or have a project to discuss? Reach out via GitHub or email.</p>
+          <p style="margin-top:10px">
+            <strong>Email:</strong> <a href="mailto:your.email@example.com" style="color:var(--accent);text-decoration:none">jerrybature2050@gmail.com</a><br>
+            <strong>LinkedIn:</strong> <a href="#" style="color:var(--accent);text-decoration:none">https://www.linkedin.com/in/jerry-bature-380883340/</a><br>
+            <strong>GitHub:</strong> <a href="https://github.com/iam-jerry" style="color:var(--accent);text-decoration:none">https://github.com/iam-jerry</a>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="projects-heading" style="grid-column: 1 / -1;">
+          <h3 id="projects-heading">Selected projects</h3>
+          <div class="projects-list" id="projects">
+            <div class="project" role="article" aria-label="Personal Portfolio">
+              <div>
+                <div style="font-weight:600">Personal Portfolio</div>
+                <div class="meta">A responsive portfolio site built with semantic HTML and modern CSS. Focused on performance and minimal dependencies.</div>
+              </div>
+              <div style="text-align:right">
+                <div>
+                  <a href="projects/portfolio.html" style="color:var(--accent);text-decoration:none">Live</a> ·
+                  <a href="https://github.com/iam-jerry/portfolio" style="color:var(--muted);text-decoration:none">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project" role="article" aria-label="Taskly">
+              <div>
+                <div style="font-weight:600">Taskly — Task Manager</div>
+                <div class="meta">Lightweight task manager using vanilla JavaScript and LocalStorage. Keyboard-first UX, accessible forms, and drag-to-reorder.</div>
+              </div>
+              <div style="text-align:right">
+                <div>
+                  <a href="projects/taskly.html" style="color:var(--accent);text-decoration:none">Live</a> ·
+                  <a href="https://github.com/iam-jerry/taskly" style="color:var(--muted);text-decoration:none">Source</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project" role="article" aria-label="WeatherNow">
+              <div>
+                <div style="font-weight:600">WeatherNow — Weather Dashboard</div>
+                <div class="meta">Responsive weather dashboard fetching data from OpenWeatherMap API. Demonstrates modular CSS and progressive enhancement.</div>
+              </div>
+              <div style="text-align:right">
+                <div>
+                  <a href="projects/weathernow.html" style="color:var(--accent);text-decoration:none">Live</a> ·
+                  <a href="https://github.com/iam-jerry/weathernow" style="color:var(--muted);text-decoration:none">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="skills" aria-labelledby="skills-heading">
+          <h3 id="skills-heading">Skills</h3>
+          <div class="skills" aria-hidden="false">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Accessibility</div>
+            <div class="skill">Performance</div>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="education-heading">
+          <h3 id="education-heading">Education & Experience</h3>
+          <p class="muted">Briefly list degrees, certifications, or notable roles — company names and years.</p>
+          <ul class="muted" style="margin:10px 0 0 18px">
+            <li>Frontend Developer — Freelance (2022–Present)</li>
+            <li>UI Engineer — Example Company (2020–2022)</li>
+            <li>B.Sc. — University Name (2016–2020)</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div style="margin-top:18px">© <span id="year"></span> 2025 Jerry (iam-jerry).</div>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Jerry (iam-jerry)</title>
+  <meta name="description" content="Project details: Personal Portfolio by Jerry (iam-jerry)" />
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <a class="back-link" href="../index.html">← Back to portfolio</a>
+
+    <section class="project-hero" aria-labelledby="portfolio-title">
+      <div class="thumb" aria-hidden="true">
+        <!-- Add a real screenshot at assets/portfolio-screenshot.png -->
+        <img src="../assets/portfolio-screenshot.png" alt="Portfolio screenshot (placeholder)">
+      </div>
+      <div class="project-content">
+        <h2 id="portfolio-title">Personal Portfolio</h2>
+        <div class="project-meta">
+          <div>Role: Designer & Developer</div>
+          <div> · </div>
+          <div>Tech: HTML, CSS</div>
+        </div>
+        <p class="muted">A minimal, responsive portfolio focused on accessibility, performance, and clear presentation of projects. The site uses semantic HTML, mobile-first CSS, and small, dependency-free scripts for progressive enhancement.</p>
+        <p>
+          <a class="cta" href="https://iam-jerry.github.io/portfolio" target="_blank" rel="noopener">View live</a>
+          <a style="margin-left:12px;color:var(--muted);text-decoration:none" href="https://github.com/iam-jerry/portfolio" target="_blank" rel="noopener">View source</a>
+        </p>
+      </div>
+    </section>
+
+    <article class="card">
+      <h3>Features</h3>
+      <ul class="muted" style="margin:8px 0 0 18px">
+        <li>Semantic, accessible markup with keyboard-friendly navigation.</li>
+        <li>Responsive layout and fluid typography.</li>
+        <li>Small script to handle focus management and simple interactions.</li>
+        <li>Optimized images and critical CSS for fast first paint.</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px;">
+      <h3>How I built it</h3>
+      <p class="muted">I started with a content-first wireframe, created semantic sections for projects and about, and refined styles with utility classes to keep the CSS small. I tested with Lighthouse and VoiceOver to ensure accessibility and performance.</p>
+    </article>
+
+    <footer>
+      <div style="margin-top:18px">© <span id="year"></span> Jerry (iam-jerry). Built with HTML & CSS.</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
